@@ -3,15 +3,10 @@
  * 填入完整 URL 后对应按钮可直接下载；留空字符串则展示「即将开放」。
  */
 export const DOWNLOAD_CONFIG = {
-  /** macOS · Apple Silicon (.dmg) */
-  macArm: '',
-  /** macOS · Intel (.dmg) */
-  macIntel: '',
-  /** Windows x64 (.exe) */
+  macArm: 'https://github.com/2030378835/slim-vid/releases/download/v1.0.0/SlimVid-1.0.0-mac-arm64.dmg',
+  macIntel: 'https://github.com/2030378835/slim-vid/releases/download/v1.0.0/SlimVid-1.0.0-mac-x64.dmg',
   win: '',
-  /** Linux x64 (.AppImage) */
   linux: '',
-  /** 源码仓库 */
   repo: 'https://gitee.com/qq2057187934/crazy-slim-vid'
 } as const
 
