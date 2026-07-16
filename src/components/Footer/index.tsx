@@ -14,11 +14,11 @@ export function Footer() {
         <p className="footer__copy">© {year} SlimVid · 轻量视频压缩</p>
         <a
           className="footer__link"
-          href="https://2030378835.github.io/slim-vid/"
+          href="https://github.com/2030378835"
           target="_blank"
           rel="noreferrer"
         >
-          官网
+          作者
         </a>
       </div>
     </footer>
