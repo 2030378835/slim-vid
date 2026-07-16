@@ -59,7 +59,7 @@ export function Hero() {
           <p className="hero__brand">SlimVid</p>
           <h1 className="hero__headline">把视频压到刚好</h1>
           <p className="hero__sub">
-            轻量桌面压缩工具。拖拽入队、五档预设与自定义规则，自动硬件加速，压缩完一眼看体积变化。
+            轻量桌面压缩工具。拖拽入队、五档预设与自定义，智能并行加速长片，自动硬件加速，压缩完一眼看体积变化。
           </p>
           <div className="hero__actions">
             <HeroPrimaryCta os={os} />
@@ -97,7 +97,7 @@ export function Hero() {
               <div className="mock__task is-run">
                 <div className="mock__task-top">
                   <span>demo_4k.mov</span>
-                  <em>压缩中</em>
+                  <em>智能并行 · 4 段</em>
                 </div>
                 <div className="mock__bar">
                   <i />

@@ -9,12 +9,17 @@ export const features = [
   {
     id: 'drop',
     title: '拖拽批量',
-    text: '把视频扔进窗口，或一次选多个文件入队，压缩前自动分析分辨率与时长。'
+    text: '把视频扔进窗口，或一次选多个文件入队；分析支持最多 3 路并发，队列上限 10 个任务。'
   },
   {
     id: 'presets',
     title: '预设 + 自定义',
-    text: '视觉无损到极限压缩共五档，也可自调 CRF、码率、分辨率与音频。'
+    text: '视觉无损到极限压缩共五档，也可自调 CRF、码率、分辨率与音频；设置自动记忆。'
+  },
+  {
+    id: 'parallel',
+    title: '智能并行',
+    text: '长视频或高码率素材自动按关键帧分段、多路并行编码后合并，整体更快完成。'
   },
   {
     id: 'hw',
@@ -24,7 +29,7 @@ export const features = [
   {
     id: 'queue',
     title: '进度队列',
-    text: '多任务排队，实时进度、速度与 ETA，可暂停、取消或换预设重压。'
+    text: '实时进度、速度与 ETA，可暂停、取消或换预设重压；分析完预估输出体积。'
   },
   {
     id: 'compare',
@@ -37,7 +42,7 @@ export const flowSteps = [
   {
     step: '01',
     title: '添加视频',
-    text: '拖拽或选择本地视频，SlimVid 用 ffprobe 读信息。'
+    text: '拖拽或选择本地视频，SlimVid 用 ffprobe 读信息并预估体积。'
   },
   {
     step: '02',
@@ -47,7 +52,7 @@ export const flowSteps = [
   {
     step: '03',
     title: '开始压缩',
-    text: '排队编码，看进度与结果，需要再换预设重压。'
+    text: '自动入队编码；长片可触发智能并行，看进度与结果后再换预设重压。'
   }
 ] as const
 
@@ -61,7 +66,11 @@ export const guideItems = [
     text: '系统装有带硬件编码器的 ffmpeg 时优先走加速；否则使用内置 ffmpeg-static（CPU）。'
   },
   {
-    title: '输出文件',
-    text: '默认写在源文件同目录，文件名带预设后缀与秒级时间戳，避免覆盖原片。'
+    title: '智能并行',
+    text: '较长或高码率素材会自动分段并行；任务卡片显示「智能并行」与段数，失败时回退单进程。'
+  },
+  {
+    title: '输出与更新',
+    text: '默认写在源文件同目录，文件名带预设后缀与时间戳。安装后可从 GitHub Releases 自动检查更新。'
   }
 ] as const

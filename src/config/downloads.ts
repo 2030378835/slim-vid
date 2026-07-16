@@ -3,7 +3,7 @@
  * 安装包发布在 slim-vid 仓库的 GitHub Releases，与客户端自动更新同源。
  * 发版后请将 VERSION / TAG 与 SlimVid package.json 保持一致。
  */
-const VERSION = '1.1.0'
+export const VERSION = '1.1.0'
 const TAG = `v${VERSION}`
 const RELEASE_BASE = `https://github.com/2030378835/slim-vid/releases/download/${TAG}`
 

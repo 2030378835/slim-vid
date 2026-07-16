@@ -8,7 +8,7 @@ export function Features() {
         <header className="features__head">
           <span className="section__eyebrow">Features</span>
           <h2 className="section__title">压缩该有的都在</h2>
-          <p className="section__lead">从入队到结果对比，流程尽量短；画质与体积由你决定。</p>
+          <p className="section__lead">从入队到结果对比，流程尽量短；长片智能并行，画质与体积由你决定。</p>
         </header>
 
         <div className="features__list">

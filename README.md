@@ -40,7 +40,7 @@ pnpm preview
 编辑 [`src/config/downloads.ts`](src/config/downloads.ts) 中的 `VERSION`（发版时与 SlimVid `package.json` 同步）：
 
 ```ts
-const VERSION = '1.0.0'
+const VERSION = '1.1.0'
 const TAG = `v${VERSION}`
 const RELEASE_BASE = `https://github.com/2030378835/slim-vid/releases/download/${TAG}`
 ```

@@ -1,6 +1,7 @@
 import {
   getDownloadUrl,
-  platforms
+  platforms,
+  VERSION
 } from '../../config/downloads'
 import './Download.less'
 
@@ -12,7 +13,7 @@ export function Download() {
           <span className="section__eyebrow">Download</span>
           <h2 className="section__title">下载 SlimVid</h2>
           <p className="section__lead">
-            选择你的系统。链接在配置就绪后可直接下载；未配置则显示即将开放。
+            当前版本 {VERSION}。选择你的系统下载；未配置平台显示即将开放。
           </p>
         </header>
 
