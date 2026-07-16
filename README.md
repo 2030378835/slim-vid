@@ -35,19 +35,17 @@ pnpm preview
 
 ## 下载链接
 
-编辑 [`src/config/downloads.ts`](src/config/downloads.ts)：
+安装包发布在 [slim-vid Releases](https://github.com/2030378835/slim-vid/releases)，与桌面端自动更新同源。
+
+编辑 [`src/config/downloads.ts`](src/config/downloads.ts) 中的 `VERSION`（发版时与 SlimVid `package.json` 同步）：
 
 ```ts
-export const DOWNLOAD_CONFIG = {
-  macArm: '',    // macOS Apple Silicon .dmg
-  macIntel: '',  // macOS Intel .dmg
-  win: '',       // Windows .exe
-  linux: '',     // Linux AppImage
-  repo: 'https://gitee.com/qq2057187934/crazy-slim-vid'
-}
+const VERSION = '1.0.0'
+const TAG = `v${VERSION}`
+const RELEASE_BASE = `https://github.com/2030378835/slim-vid/releases/download/${TAG}`
 ```
 
-有链接：点击直接下载。留空：显示「即将开放」。
+桌面端源码（crazy-slimVid）可保持私有；用户只能从 Releases 下载安装包。
 macOS 访客在 Hero 可切换 Apple Silicon / Intel 后再下载。
 
 ## 页面结构

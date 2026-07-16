@@ -1,5 +1,4 @@
 import {
-  DOWNLOAD_CONFIG,
   getDownloadUrl,
   platforms
 } from '../../config/downloads'
@@ -41,13 +40,6 @@ export function Download() {
             )
           })}
         </div>
-
-        <p className="download__repo">
-          源码与发行记录：
-          <a href={DOWNLOAD_CONFIG.repo} target="_blank" rel="noreferrer">
-            Gitee · crazy-slim-vid
-          </a>
-        </p>
       </div>
     </section>
   )

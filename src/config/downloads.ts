@@ -1,18 +1,23 @@
 /**
  * SlimVid 安装包下载配置。
- * 填入完整 URL 后对应按钮可直接下载；留空字符串则展示「即将开放」。
+ * 安装包发布在 slim-vid 仓库的 GitHub Releases，与客户端自动更新同源。
+ * 发版后请将 VERSION / TAG 与 SlimVid package.json 保持一致。
  */
+const VERSION = '1.0.0'
+const TAG = `v${VERSION}`
+const RELEASE_BASE = `https://github.com/2030378835/slim-vid/releases/download/${TAG}`
+
 export const DOWNLOAD_CONFIG = {
   /** macOS · Apple Silicon (.dmg) */
-  macArm: '',
+  macArm: `${RELEASE_BASE}/SlimVid-${VERSION}-mac-arm64.dmg`,
   /** macOS · Intel (.dmg) */
-  macIntel: '',
+  macIntel: `${RELEASE_BASE}/SlimVid-${VERSION}-mac-x64.dmg`,
   /** Windows x64 (.exe) */
-  win: '',
+  win: ``,
   /** Linux x64 (.AppImage) */
-  linux: '',
-  /** 源码仓库 */
-  repo: 'https://gitee.com/qq2057187934/crazy-slim-vid'
+  linux: ``,
+  /** 发行页 */
+  releases: 'https://github.com/2030378835/slim-vid/releases'
 } as const
 
 export type DownloadConfig = typeof DOWNLOAD_CONFIG

@@ -1,5 +1,4 @@
 import logo from '../../assets/logo.png'
-import { DOWNLOAD_CONFIG } from '../../config/downloads'
 import './Footer.less'
 
 export function Footer() {
@@ -15,11 +14,11 @@ export function Footer() {
         <p className="footer__copy">© {year} SlimVid · 轻量视频压缩</p>
         <a
           className="footer__link"
-          href={DOWNLOAD_CONFIG.repo}
+          href="https://2030378835.github.io/slim-vid/"
           target="_blank"
           rel="noreferrer"
         >
-          Gitee 仓库
+          官网
         </a>
       </div>
     </footer>
